@@ -905,6 +905,10 @@
                         text-decoration: none;
                         color: var(--text-color);
 
+                        @media only screen and (max-width:767px) {
+                            font-size: calc(var(--font-size) * 1.75);
+                        }
+
                         a{
                             position: relative;
                             display: block;
@@ -912,6 +916,10 @@
                             font-size: calc(var(--font-size) * 1.25);
                             text-decoration: none;
                             color: var(--text-color);
+
+                            @media only screen and (max-width:767px) {
+                                font-size: calc(var(--font-size) * 1.75);
+                            }
                         }
                     }
 
@@ -942,6 +950,7 @@
                 flex-direction: column;
                 grid-gap: 15px;
                 align-items: flex-start;
+                padding: 30px;
             }
 
             .title_{
@@ -950,6 +959,13 @@
                 align-items: center;
                 justify-content: flex-start;
 
+                @media only screen and (max-width:767px) {
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                }
+
                 .icon_{
                     position: relative;
                     display: block;
@@ -957,7 +973,7 @@
                     height: auto;
 
                     @media only screen and (max-width:767px){
-                        width: 40px;
+                        width: 55px;
                     }
 
                     img{
@@ -976,9 +992,22 @@
                     font-size: calc(var(--font-size) * 1.5);
                     margin: 0;
                     margin-inline-start: 1em;
+
+                    @media only screen and (max-width:767px) {
+                        font-size: calc(var(--font-size) * 1.75);
+                        text-align: center;
+                        margin-top: 1em;
+                        margin-inline-start: 0;
+                    }
                     
                 }
             }
+
+           @media only screen and (max-width:767px){
+            .btn_outline{
+                width: 100%;
+            }
+           }
         }
     }
 }
