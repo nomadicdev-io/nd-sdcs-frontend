@@ -933,8 +933,10 @@
     .about_wrapper{
         .item_{
             .image_box{
+              picture{
                 transform: none;
                 opacity: 1;
+              }
             }
 
             .text_area{
