@@ -36,7 +36,7 @@
         }
     }
 
-    &:before, &:focus, &:active{
+    &:before{
         content: '';
         position: absolute;
         top: 0;
@@ -62,7 +62,7 @@
         transition: all 0.3s ease;
     }
 
-    &:hover{
+    &:hover, &:focus, &:active{
         &:after{
             opacity: 1;
         }
@@ -269,4 +269,11 @@
             }
         }
     }
+}
+
+.btn_group{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }

@@ -1,6 +1,6 @@
 <section class="in_section no_padding" id="contact">
     <div class="contact_map">
-        <div class="map_">
+        <a href="{{map}}" target="_blank" class="map_">
             <picture>
                 <source srcset="./images/contact-bg.png" />
                 <img src="./images/contact-bg.png" loading="lazy" alt="Services SDCS" />
@@ -9,7 +9,7 @@
             <div class="marker_">
                 <img src="./images/c-pin-white.svg" />
             </div>
-        </div>
+        </a>
     </div>
     <div class="contact_container">
         <div class="container">
@@ -32,14 +32,17 @@
                             <div class="icon_">
                                 <img src="./images/c-phone.svg" />
                             </div>
-                            <p>+971 4 222 3498 <br/> +971 55 159 0712</p>
+                            <p>
+                                <a href="tel:+97142223498">+971 4 222 3498</a>
+                                <a href="tel:+971551590712"> +971 55 159 0712</a>
+                            </p>
                         </li>
 
                         <li>
                             <div class="icon_">
                                 <img src="./images/c-mail.svg" />
                             </div>
-                            <p>info@sdcsdubai.com</p>
+                            <p><a href="mailto:info@sdcsdubai.com">info@sdcsdubai.com</a></p>
                         </li>
                     </ul>
                 </div>
@@ -51,7 +54,7 @@
                         <p>Chat with us for more details.</p>
                     </div>
 
-                    <a href="#about" class="btn_outline"><span>Chat With Us</span></a>
+                    <a href="{{whatsapp}}" target="_blank" class="btn_outline"><span>Chat With Us</span></a>
                 </div>
             </div>
         </div>

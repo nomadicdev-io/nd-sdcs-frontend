@@ -45,6 +45,14 @@ header{
                 display: block;
                 width: auto;
                 height: 100%;
+
+                &.scrl_{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    transition: all 0.3s ease;
+                }
             }
         }
     }
@@ -94,12 +102,13 @@ header{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    width: 50px;
-                    height: 50px;
+                    width: 40px;
+                    height: 40px;
                     background: none;
                     border: none;
                     outline: none;
                     z-index: 2;
+                    padding: 0;
 
                     span{
                         position: relative;
@@ -161,6 +170,7 @@ header{
                     text-transform: uppercase;
                     transition: color 0.3s ease;
 
+                   
                     &:before{
                         content: '';
                         position: absolute;
@@ -172,10 +182,18 @@ header{
                         width: 100%;
                         height: 2px;
                         transform: scaleX(0);
+                        @media only screen and (max-width:1200px){
+                            background-color: var(--white-color);
+                        }
+    
                     }
 
                     &:hover{
                         color: var(--primary-color);
+                        @media only screen and (max-width:1200px){
+                            color: var(--white-color);
+                        }
+    
                         
                         &:before{
                             transform: scaleX(1);
@@ -186,9 +204,14 @@ header{
                 &.active_{
                     .nav_link{
                         color: var(--primary-color);
+                        @media only screen and (max-width:1200px){
+                            color: var(--white-color);
+                        }
+    
                         
                         &:before{
                             transform: scaleX(1);
+                            
                         }
                     }
                 }
@@ -245,12 +268,50 @@ body{
                 }
             }
         }
+
+        &.scrolled_{
+            .navbar_{
+                .nav_list{
+                    @media only screen and (max-width:1200px){
+                        &:not(.full_res_view){
+                            li{
+
+                                .btn_trans{
+                                    &:before{
+                                        background-color: var(--white-color);
+                                    }
+                                }
+
+                                .toggler_{
+                                    span{
+                                        background-color: var(--white-color);
+
+                                       
+                                        
+                                        &:before, &:after{
+                                            background-color: var(--white-color);
+                                        }
+                                    }
+
+                                    &.active_{
+                                        span{
+                                            background-color: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     &.scrolled_{
         header{
             height: 90px;
-            background-color: var(--text-color);
+            background-color: var(--white-color);
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.082);
 
             @media only screen and (max-width:1200px){
                 height: 80px;
@@ -268,6 +329,76 @@ body{
                             transform: translateY(-100%);
                         }
                         
+                    }
+                }
+            }
+
+            .nav_logo{
+                .nav_logo_link{
+                    img{
+                        &:not(.scrl_){
+                            opacity: 0;
+                        }
+                        &.scrl_{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (min-width:1200px){
+                .navbar_{
+                    .nav_list{
+                        &.full_res_view{
+                            li{
+                                .nav_link{
+                                    color: var(--text-color);
+                                }
+                            }
+                        }
+
+                        &:not(.full_res_view){
+                            li{
+                                .btn_trans{
+                                    &:before{
+                                        background-color: var(--text-color);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            @media only screen and (max-width:1200px){
+                .navbar_{
+                    .nav_list{
+                        &:not(.full_res_view){
+                            li{
+                                .btn_trans{
+                                    &:before{
+                                        background-color: var(--text-color);
+                                    }
+                                }
+
+                                .toggler_{
+                                    span{
+                                        background-color: var(--text-color);
+
+                                       
+                                        
+                                        &:before, &:after{
+                                            background-color: var(--text-color);
+                                        }
+                                    }
+                                    &.active_{
+                                        span{
+                                            background-color: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
                     }
                 }
             }
