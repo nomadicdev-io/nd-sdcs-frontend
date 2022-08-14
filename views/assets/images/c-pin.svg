@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="43" height="47.285" viewBox="0 0 43 47.285">
+  <g id="c-pin" transform="translate(0.041 2)">
+    <rect id="Area" width="43" height="43" transform="translate(-0.041)" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(3.939 0)">
+      <path id="_95cc703b-4e90-46f8-87fa-a9642eb11b5e" data-name="95cc703b-4e90-46f8-87fa-a9642eb11b5e" d="M38.143,18.617c0,13.773-17.708,25.577-17.708,25.577S2.727,32.39,2.727,18.617a17.708,17.708,0,0,1,35.416,0Z" transform="translate(-2.727 -0.909)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      <circle id="_93a46881-6e4b-40a0-9308-4ab3d846135f" data-name="93a46881-6e4b-40a0-9308-4ab3d846135f" cx="5.902" cy="5.902" r="5.902" transform="translate(11.806 11.805)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+    </g>
+  </g>
+</svg>

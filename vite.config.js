@@ -9,13 +9,15 @@ export default defineConfig({
     root: 'views',
     build: {
         outDir: '../dist'
-    },
+    },  
+    publicDir: 'assets',  
     plugins: [handlebars({
         context: {
             title: 'Alan',
-            assets: resolve(__dirname, 'public')
+            assets: resolve(__dirname, 'assets'),
+            boydClass: 'page_body'
         },
-        partialDirectory: resolve(__dirname, 'views/components'),
+        partialDirectory: [resolve(__dirname, 'views/layout'), resolve(__dirname, 'views/components'), resolve(__dirname, 'views/sections')],
         helpers: {
             capitalize: ()=> {
                 console.log()

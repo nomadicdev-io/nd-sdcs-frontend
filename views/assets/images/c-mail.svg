@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="44.432" height="39" viewBox="0 0 44.432 39">
+  <g id="c-mail" transform="translate(2.757)">
+    <rect id="Area" width="39" height="39" transform="translate(-0.041)" fill="#fcfcfc" opacity="0"/>
+    <g id="Icon" transform="translate(3.541 0)">
+      <path id="_95af2764-21f8-4314-8777-e94917b99d1e" data-name="95af2764-21f8-4314-8777-e94917b99d1e" d="M7.8,7.8H39a3.911,3.911,0,0,1,3.9,3.9V35.1A3.911,3.911,0,0,1,39,39H7.8a3.911,3.911,0,0,1-3.9-3.9V11.7A3.911,3.911,0,0,1,7.8,7.8Z" transform="translate(-7.482 -3.9)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9"/>
+      <path id="_1de26448-fee2-486a-b4da-41e4f2d485bb" data-name="1de26448-fee2-486a-b4da-41e4f2d485bb" d="M42.9,11.7,23.4,25.35,3.9,11.7" transform="translate(-7.482 -3.9)" fill="none" stroke="#3d3d3d" stroke-linecap="round" stroke-linejoin="round" stroke-width="3.9"/>
+    </g>
+  </g>
+</svg>
