@@ -4,7 +4,7 @@ header{
     top: 0;
     left: 0;
     z-index: 99;
-    height: 14vh;
+    height: 16vh;
     padding: 0.5em 0;
     transition: all 0.3s ease;
     @media only screen and (max-width:1200px){
@@ -36,7 +36,8 @@ header{
 
         .nav_logo_link{
             position: relative;
-            display: block;
+            display: flex;
+            align-items: center;
             width: auto;
             height: 100%;
 
@@ -44,7 +45,12 @@ header{
                 position: relative;
                 display: block;
                 width: auto;
-                height: 100%;
+                max-height: 100%;
+                max-width: 75%;
+
+                @media only screen and (max-width:767px){
+                    max-width: 30vw;
+                }
 
                 &.scrl_{
                     position: absolute;

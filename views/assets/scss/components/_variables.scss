@@ -1,9 +1,10 @@
 :root {
     --font-family: 'Roboto', sans-serif;
-    --primary-color: #48A9A6;
-    --secondary-color: #66BA85;
-    --gradient-color:  linear-gradient(90deg, var(--secondary-color) 0%, var(--primary-color) 100%);
-    --gradient-color-2: linear-gradient(90deg, #00A8DC 0%, #82BE6B 100%);
+    --primary-color: #EF2C1D;
+    --secondary-color: #006298;
+    --third-color: #006298;
+    --gradient-color:  linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    --gradient-color-2: linear-gradient(90deg, var(--secondary-color)  0%, var(--primary-color)  100%);
     --text-color: #000000;
     --font-size: 1vw;
     --ease: cubic-bezier(0.25, 1, 0.5, 1);

@@ -207,8 +207,12 @@ footer{
 
         &.sub_{
             font-weight: 500;
-            line-height: 1.75;
-            font-size: calc(var(--font-size) * 1.75);
+            line-height: 1.5;
+            font-size: calc(var(--font-size) * 1.25);
+
+            @media only screen and (max-width:767px){
+                font-size: calc(var(--font-size) * 1.75);
+            }
             
         }
     }
