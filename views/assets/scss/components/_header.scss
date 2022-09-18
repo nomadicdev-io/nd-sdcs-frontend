@@ -46,7 +46,8 @@ header{
                 display: block;
                 width: auto;
                 max-height: 100%;
-                max-width: 75%;
+                height: 100%;
+                max-width: 50%;
 
                 @media only screen and (max-width:767px){
                     max-width: 30vw;
